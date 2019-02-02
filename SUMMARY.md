@@ -12,3 +12,5 @@
 - [工具软件]()
  - [weinre](工具软件/weinre.md)
 - [综合知识]()
+ - [total](综合知识/total.md)
+ - [正则](综合知识/regex.md)
