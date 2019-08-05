@@ -12,6 +12,7 @@
 - [工具软件]()
   - [weinre](工具软件/weinre.md)
   - [MAMP](工具软件/MAMP.md)
+  - [集合](工具软件/集合.md)
 - [综合知识]()
   - [total](综合知识/total.md)
   - [正则](综合知识/regex.md)
