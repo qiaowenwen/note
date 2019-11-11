@@ -61,6 +61,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="原型和原型链.html" />
+    
     
     <link rel="prev" href="this.html" />
     
@@ -196,6 +198,19 @@
             
                     
                     数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="原型和原型链.html">
+            
+                <a href="原型和原型链.html">
+            
+                    
+                    原型和原型链
             
                 </a>
             
@@ -382,7 +397,20 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="../../综合知识/pdf.html">
+        <li class="chapter " data-level="1.7.1" data-path="../../综合知识/原生交互相关的问题.html">
+            
+                <a href="../../综合知识/原生交互相关的问题.html">
+            
+                    
+                    原生交互相关的问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../综合知识/pdf.html">
             
                 <a href="../../综合知识/pdf.html">
             
@@ -395,7 +423,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="../../综合知识/total.html">
+        <li class="chapter " data-level="1.7.3" data-path="../../综合知识/total.html">
             
                 <a href="../../综合知识/total.html">
             
@@ -408,7 +436,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.3" data-path="../../综合知识/regex.html">
+        <li class="chapter " data-level="1.7.4" data-path="../../综合知识/regex.html">
             
                 <a href="../../综合知识/regex.html">
             
@@ -421,7 +449,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.4" data-path="../../综合知识/webpack.html">
+        <li class="chapter " data-level="1.7.5" data-path="../../综合知识/webpack.html">
             
                 <a href="../../综合知识/webpack.html">
             
@@ -434,7 +462,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.5" data-path="../../综合知识/移动端页面适配问题.html">
+        <li class="chapter " data-level="1.7.6" data-path="../../综合知识/移动端页面适配问题.html">
             
                 <a href="../../综合知识/移动端页面适配问题.html">
             
@@ -447,7 +475,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.6" data-path="../../综合知识/时间的相关问题.html">
+        <li class="chapter " data-level="1.7.7" data-path="../../综合知识/时间的相关问题.html">
             
                 <a href="../../综合知识/时间的相关问题.html">
             
@@ -578,7 +606,8 @@
 <p>&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x4E24;&#x4E2A;&#x6D6E;&#x70B9;&#x578B;&#x5728;&#x8FD0;&#x7B97;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F1A;&#x5B58;&#x5728;&#x8BEF;&#x5DEE;&#xFF0C;&#x91C7;&#x7528;&#x8BA1;&#x7B97;&#x4E24;&#x8005;&#x4E4B;&#x5DEE;&#x7684;&#x7EDD;&#x5BF9;&#x503C;&#x662F;&#x5426;&#x5C0F;&#x4E8E;&#x67D0;&#x4E2A;&#x9608;&#x503C;&#x7684;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;</p>
 <pre><code class="lang-javascript"><span class="hljs-built_in">Math</span>.abs(<span class="hljs-number">1</span> / <span class="hljs-number">3</span> - (<span class="hljs-number">1</span> - <span class="hljs-number">2</span> / <span class="hljs-number">3</span>)) &lt; <span class="hljs-number">0.0000001</span> <span class="hljs-comment">// true</span>
 </code></pre>
-<h2 id="&#x6570;&#x7EC4;-&#x65B9;&#x6CD5;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x539F;&#x6765;&#x7684;&#x6570;&#x503C;">&#x6570;&#x7EC4; ###&#x65B9;&#x6CD5;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x539F;&#x6765;&#x7684;&#x6570;&#x503C;</h2>
+<h2 id="&#x6570;&#x7EC4;">&#x6570;&#x7EC4;</h2>
+<h3 id="1&#x65B9;&#x6CD5;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x539F;&#x6765;&#x7684;&#x6570;&#x503C;">1.&#x65B9;&#x6CD5;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x539F;&#x6765;&#x7684;&#x6570;&#x503C;</h3>
 <p>&#xFF08;1&#xFF09;concat
 &#x8BF7;&#x6CE8;&#x610F;&#xFF0C;concat()&#x65B9;&#x6CD5;&#x5E76;&#x6CA1;&#x6709;&#x4FEE;&#x6539;&#x5F53;&#x524D; Array&#xFF0C;&#x800C;&#x662F;&#x8FD4;&#x56DE;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Array&#x3002;
 &#x5B9E;&#x9645;&#x4E0A;&#xFF0C;concat()&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x63A5;&#x6536;&#x4EFB;&#x610F;&#x4E2A;&#x5143;&#x7D20;&#x548C; Array&#xFF0C;&#x5E76;&#x4E14;&#x81EA;&#x52A8;&#x628A; Array &#x62C6;&#x5F00;&#xFF0C;&#x7136;&#x540E;&#x5168;&#x90E8;&#x6DFB;&#x52A0;&#x5230;&#x65B0;&#x7684; Array &#x91CC;&#xFF1A;</p>
@@ -612,7 +641,7 @@ r <span class="hljs-comment">// [1, 5, 9, 15]</span>
 find()&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x67E5;&#x627E;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5982;&#x679C;&#x627E;&#x5230;&#x4E86;&#xFF0C;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5426;&#x5219;&#xFF0C;&#x8FD4;&#x56DE; undefined,&#x5176;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x4E5F;&#x662F; true &#x91D1;&#x548C; false</p>
 <p>(6)findIndex
 &#x8BE5;&#x65B9;&#x6CD5;&#x662F;&#x7528;&#x6765;&#x67E5;&#x627E;&#x7B2C;&#x4E00;&#x4E2A;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684;&#x7D22;&#x5F15;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x5219;&#x8FD4;&#x56DE;-1.</p>
-<h3 id="&#x65B9;&#x6CD5;&#x4F1A;&#x6539;&#x53D8;&#x7684;&#x539F;&#x6765;&#x6570;&#x7EC4;&#x7684;&#x503C;">&#x65B9;&#x6CD5;&#x4F1A;&#x6539;&#x53D8;&#x7684;&#x539F;&#x6765;&#x6570;&#x7EC4;&#x7684;&#x503C;</h3>
+<h3 id="2&#x65B9;&#x6CD5;&#x4F1A;&#x6539;&#x53D8;&#x7684;&#x539F;&#x6765;&#x6570;&#x7EC4;&#x7684;&#x503C;">2.&#x65B9;&#x6CD5;&#x4F1A;&#x6539;&#x53D8;&#x7684;&#x539F;&#x6765;&#x6570;&#x7EC4;&#x7684;&#x503C;</h3>
 <p>&#x5BF9;&#x6570;&#x7EC4;&#x7684;&#x64CD;&#x4F5C;&#x65E0;&#x7591;&#x662F;&#x589E;&#x5220;&#x6539;&#x67E5;&#x51E0;&#x79CD;
 &#xFF08;1&#xFF09;pop &#x548C; push
 push &#x662F;&#x5728;&#x6570;&#x7EC4;&#x7684;&#x672B;&#x5C3E;&#x6DFB;&#x52A0;&#x5143;&#x7D20;&#xFF0C;pop &#x5728;&#x6570;&#x7EC4;&#x7684;&#x672B;&#x5C3E;&#x5220;&#x9664;</p>
@@ -660,6 +689,16 @@ join &#x53EF;&#x4EE5;&#x5C06;&#x6570;&#x7EC4;&#x8F6C;&#x5316;&#x6210;&#x5B57;&#x
 <pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = [<span class="hljs-string">&apos;A&apos;</span>, <span class="hljs-string">&apos;B&apos;</span>, <span class="hljs-string">&apos;C&apos;</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
 arr.join(<span class="hljs-string">&apos;-&apos;</span>) <span class="hljs-comment">// &apos;A-B-C-1-2-3&apos;</span>
 </code></pre>
+<h3 id="&#x5F00;&#x53D1;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x6570;&#x7EC4;&#x7684;&#x4E00;&#x4E9B;&#x95EE;&#x9898;">&#x5F00;&#x53D1;&#x4E2D;&#x9047;&#x5230;&#x7684;&#x6570;&#x7EC4;&#x7684;&#x4E00;&#x4E9B;&#x95EE;&#x9898;</h3>
+<h4 id="&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#x7684;&#x6784;&#x5EFA;">&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#x7684;&#x6784;&#x5EFA;</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> dataArr=[]
+<span class="hljs-keyword">let</span> dataObj=[]
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">4</span>;i++){
+dataObj.name=<span class="hljs-string">&quot;&#x300A;&#x6545;&#x4E8B;&#x4F1A;&#x300B;&quot;</span>;dataObj.author=<span class="hljs-string">&quot;&#x5F20;&#x4E09;&quot;</span>;dataObj.addr=<span class="hljs-string">&quot;&#x5EFA;&#x5E73;&#x6751;1&#x53F7;&quot;</span>;dataObj.len=<span class="hljs-number">5</span>;
+dataArr[i]=dataObj;
+}
+<span class="hljs-built_in">console</span>.log(dataArr);
+</code></pre>
 
                                 
                                 </section>
@@ -687,10 +726,14 @@ arr.join(<span class="hljs-string">&apos;-&apos;</span>) <span class="hljs-comme
 
             
                 
-                <a href="this.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: this 的问题">
+                <a href="this.html" class="navigation navigation-prev " aria-label="Previous page: this 的问题">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="原型和原型链.html" class="navigation navigation-next " aria-label="Next page: 原型和原型链">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -699,7 +742,7 @@ arr.join(<span class="hljs-string">&apos;-&apos;</span>) <span class="hljs-comme
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"数组","level":"1.2.2.2","depth":3,"next":{"title":"html","level":"1.2.3","depth":2,"ref":"","articles":[]},"previous":{"title":"this 的问题","level":"1.2.2.1","depth":3,"path":"基础知识/js/this.md","ref":"基础知识/js/this.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","livereload"],"pluginsConfig":{"expandable-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"基础知识/js/数组.md","mtime":"2019-08-09T03:10:50.449Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T02:51:22.535Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"数组","level":"1.2.2.2","depth":3,"next":{"title":"原型和原型链","level":"1.2.2.3","depth":3,"path":"基础知识/js/原型和原型链.md","ref":"基础知识/js/原型和原型链.md","articles":[]},"previous":{"title":"this 的问题","level":"1.2.2.1","depth":3,"path":"基础知识/js/this.md","ref":"基础知识/js/this.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","livereload"],"pluginsConfig":{"expandable-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"基础知识/js/数组.md","mtime":"2019-09-23T01:18:58.414Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-11T03:19:36.132Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

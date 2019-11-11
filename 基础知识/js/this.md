@@ -80,6 +80,8 @@ console.log(data) // Hi
 var b = new AClass('Hello World')
 console.log(new AClass('Hello World'))
 console.log(a === b) // false
+
+
 ```
 
 ##特殊情况下 this 的指向问题
@@ -116,7 +118,6 @@ obj.test() // true
 const arrow = obj.getArrow()
 arrow() // true
 ```
-
 > <font color="#0000dd">call、apply、bind</font><br />
 
 call 和 apply 以及 bind 都能改变 this 的指向但是，bind 的优先级相对较高
@@ -126,7 +127,6 @@ const obj = {}
 function test() {
   console.log(this === obj)
 }
-
 // 绑定到一个新对象，而不是 obj
 const testObj = test.bind({})
 test.apply(obj) // true

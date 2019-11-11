@@ -1,0 +1,3 @@
+RN环境的搭建
+1、mac的环境要更新到最新macOS Mojave
+2、xcode的软件要升级到最新的版本
