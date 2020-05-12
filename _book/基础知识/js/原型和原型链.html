@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>自适应背景图片的问题 · GitBook</title>
+        <title>原型和原型链 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,8 +61,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="forget.html" />
     
+    <link rel="prev" href="数组.html" />
     
 
     </head>
@@ -132,9 +132,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.1.1" data-path="bg.html">
+        <li class="chapter " data-level="1.2.1.1" data-path="../css/bg.html">
             
-                <a href="bg.html">
+                <a href="../css/bg.html">
             
                     
                     自适应背景图片的问题
@@ -145,9 +145,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.1.2" data-path="forget.html">
+        <li class="chapter " data-level="1.2.1.2" data-path="../css/forget.html">
             
-                <a href="forget.html">
+                <a href="../css/forget.html">
             
                     
                     常用的一些问题
@@ -177,9 +177,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.2.1" data-path="../js/this.html">
+        <li class="chapter " data-level="1.2.2.1" data-path="this.html">
             
-                <a href="../js/this.html">
+                <a href="this.html">
             
                     
                     this 的问题
@@ -190,9 +190,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.2" data-path="../js/数组.html">
+        <li class="chapter " data-level="1.2.2.2" data-path="数组.html">
             
-                <a href="../js/数组.html">
+                <a href="数组.html">
             
                     
                     数组
@@ -203,9 +203,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.3" data-path="../js/原型和原型链.html">
+        <li class="chapter active" data-level="1.2.2.3" data-path="原型和原型链.html">
             
-                <a href="../js/原型和原型链.html">
+                <a href="原型和原型链.html">
             
                     
                     原型和原型链
@@ -585,7 +585,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >自适应背景图片的问题</a>
+        <a href="../.." >原型和原型链</a>
     </h1>
 </div>
 
@@ -600,46 +600,80 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x80CC;&#x666F;&#x56FE;&#x7247;&#x7684;&#x81EA;&#x9002;&#x5E94;&#x7684;&#x95EE;&#x9898;">&#x80CC;&#x666F;&#x56FE;&#x7247;&#x7684;&#x81EA;&#x9002;&#x5E94;&#x7684;&#x95EE;&#x9898;</h1>
-<h3 id="&#x6700;&#x8FD1;&#x5F00;&#x53D1;&#x4E2D;&#x9047;&#x5230;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x5C31;&#x662F;&#x5728;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x8BBE;&#x7F6E;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x7531;&#x4E8E;&#x9700;&#x8981;&#x6491;&#x5F00;&#x5185;&#x5BB9;&#x3002;">&#x6700;&#x8FD1;&#x5F00;&#x53D1;&#x4E2D;&#x9047;&#x5230;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x5C31;&#x662F;&#x5728;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x8BBE;&#x7F6E;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x7531;&#x4E8E;&#x9700;&#x8981;&#x6491;&#x5F00;&#x5185;&#x5BB9;&#x3002;</h3>
-<h4 id="&#x95EE;&#x9898;-1-&#x80CC;&#x666F;&#x7684;&#x5468;&#x56F4;&#x6709;&#x9634;&#x5F71;">&#x95EE;&#x9898; 1 &#x80CC;&#x666F;&#x7684;&#x5468;&#x56F4;&#x6709;&#x9634;&#x5F71;</h4>
-<h4 id="&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;-&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x8272;&#xFF0C;&#x5728;&#x80CC;&#x666F;&#x8272;&#x4E4B;&#x4E0A;&#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x56FE;&#x7247;">&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A; &#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x8272;&#xFF0C;&#x5728;&#x80CC;&#x666F;&#x8272;&#x4E4B;&#x4E0A;&#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x56FE;&#x7247;</h4>
-<h4 id="&#x95EE;&#x9898;-2-&#x7C7B;&#x4F3C;&#x4E8E;-title-&#x7684;&#xFF0C;&#x5F62;&#x72B6;&#x4E0D;&#x89C4;&#x5219;&#x7684;&#x7684;">&#x95EE;&#x9898; 2 &#x7C7B;&#x4F3C;&#x4E8E; title &#x7684;&#xFF0C;&#x5F62;&#x72B6;&#x4E0D;&#x89C4;&#x5219;&#x7684;&#x7684;</h4>
-<h4 id="&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;&#x901A;&#x5E38;&#x4F1A;&#x5C06;&#x5206;&#x4E3A;&#x4E09;&#x4E2A;&#x90E8;&#x5206;&#xFF0C;&#x4E24;&#x8FB9;&#x7684;&#x548C;&#x4E2D;&#x95F4;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x4E2D;&#x95F4;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x90E8;&#x5206;&#x7684;&#x622A;&#x53D6;&#x3002;&#x5728;&#x4E2D;&#x95F4;&#x7684;&#x90E8;&#x5206;&#x7684;&#x8BBE;&#x7F6E;-repeat-x">&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;&#x901A;&#x5E38;&#x4F1A;&#x5C06;&#x5206;&#x4E3A;&#x4E09;&#x4E2A;&#x90E8;&#x5206;&#xFF0C;&#x4E24;&#x8FB9;&#x7684;&#x548C;&#x4E2D;&#x95F4;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x4E2D;&#x95F4;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x90E8;&#x5206;&#x7684;&#x622A;&#x53D6;&#x3002;&#x5728;&#x4E2D;&#x95F4;&#x7684;&#x90E8;&#x5206;&#x7684;&#x8BBE;&#x7F6E; repeat-x</h4>
-<p><img src="../../img/title.png" alt="markdown"></p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;knowledge-card-title-img&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;knowledge-card-title-left&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;knowledge-card-title-middle&quot;</span>&gt;</span>&#x54C8;&#x54C8;&#x54C8;&#x54C8;&#x54C8;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;knowledge-card-title-right&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</code></pre>
-<pre><code class="lang-css"><span class="hljs-selector-class">.knowledge-card-title-left</span> {
-  <span class="hljs-attribute">float</span>: left;
-  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&apos;./img/left.png&apos;</span>);
-  <span class="hljs-attribute">background-repeat</span>: no-repeat;
-  <span class="hljs-attribute">background-size</span>: <span class="hljs-number">100%</span> <span class="hljs-number">100%</span>;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">12px</span>;
-  <span class="hljs-attribute">height</span>: <span class="hljs-number">32px</span>;
-}
-
-<span class="hljs-selector-class">.knowledge-card-title-right</span> {
-  <span class="hljs-attribute">float</span>: left;
-  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&apos;./img/right.png&apos;</span>);
-  <span class="hljs-attribute">background-repeat</span>: no-repeat;
-  <span class="hljs-attribute">background-size</span>: <span class="hljs-number">100%</span> <span class="hljs-number">100%</span>;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">12px</span>;
-  <span class="hljs-attribute">height</span>: <span class="hljs-number">32px</span>;
-}
-
-<span class="hljs-selector-class">.knowledge-card-title-middle</span> {
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">8px</span>;
-  <span class="hljs-attribute">float</span>: left;
-  <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">&apos;./img/middle.png&apos;</span>);
-  <span class="hljs-attribute">background-size</span>: <span class="hljs-number">100%</span> <span class="hljs-number">100%</span>;
-  <span class="hljs-attribute">background-repeat</span>: repeat-x;
+                                <p>&#x524D;&#x8A00;&#xFF1A;&#x5728;Java&#x4E2D;&#x6216;&#x8005;&#x540E;&#x7AEF;&#x8BED;&#x8A00;&#x4E2D;&#x4E00;&#x5B9A;&#x6709;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x7684;&#x8BF4;&#x6CD5;&#x3002;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x6709;&#x4E24;&#x4E2A;&#x57FA;&#x672C;&#x7684;&#x5B9E;&#x4F8B;&#xFF1A;
+1.&#x7C7B;:&#x7C7B;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x6A21;&#x677F;&#x3002;&#x4F8B;&#x5982;&#xFF0C;Student&#x7C7B;&#x8868;&#x793A;&#x5B66;&#x751F;&#xFF0C;&#x7C7B;&#x672C;&#x8EAB;&#x662F;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#x5E76;&#x4E0D;&#x4EE3;&#x8868;&#x67D0;&#x4E00;&#x4E2A;&#x5B66;&#x751F;&#x3002;
+2.&#x5B9E;&#x4F8B;&#xFF1A;&#x5B9E;&#x4F8B;&#x662F;&#x6839;&#x636E;&#x7C7B;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x6839;&#x636E;Student&#x7C7B;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x51FA;xiaoming&#x3001;xiaohong&#x3001;xiaojun&#x7B49;&#x591A;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F8B;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5B66;&#x751F;&#xFF0C;&#x4ED6;&#x4EEC;&#x5168;&#x90FD;&#x5C5E;&#x4E8E;Student&#x7C7B;&#x578B;&#x3002;</p>
+<p><strong>&#x4F46;&#x662F;&#x5728;js&#x4E2D;&#x4ED6;&#x4E0D;&#x662F;&#x5177;&#x4F53;&#x533A;&#x5206;&#x7C7B;&#x548C;&#x5B9E;&#x4F8B;&#xFF0C;&#x662F;&#x901A;&#x8FC7;&#x539F;&#x578B;&#xFF08;prototype&#xFF09;&#x6765;&#x5B9E;&#x73B0;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x7F16;&#x7A0B;</strong></p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;&#x9996;&#x5148;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Student</span>(<span class="hljs-params">name</span>) </span>{
+    <span class="hljs-keyword">this</span>.name = name;
+    <span class="hljs-keyword">this</span>.hello = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        alert(<span class="hljs-string">&apos;Hello, &apos;</span> + <span class="hljs-keyword">this</span>.name + <span class="hljs-string">&apos;!&apos;</span>);
+    }
 }
 </code></pre>
-<h4 id="&#x603B;&#x7ED3;&#xFF1A;&#xFF08;1&#xFF09;&#x4E00;&#x65E6;&#x5185;&#x5BB9;&#x53EF;&#x53D8;&#x7684;&#xFF0C;&#x80CC;&#x666F;&#x56FE;&#x662F;&#x4F1A;&#x8DDF;&#x7740;&#x53D8;&#x3002;&#x5C3D;&#x91CF;&#x4F7F;&#x56FE;&#x7247;&#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x8272;&#x3002;&#xFF08;2&#xFF09;-&#x9047;&#x5230;&#x5F62;&#x72B6;&#x8F83;&#x4E3A;&#x8D1F;&#x8D23;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6839;&#x636E;&#x89C2;&#x5BDF;&#xFF0C;&#x53BB;&#x8BBE;&#x7F6E;&#x4E0D;&#x540C;&#x7684;&#x60C5;&#x51B5;&#x3002;">&#x603B;&#x7ED3;&#xFF1A;<span style="color:red">&#xFF08;1&#xFF09;&#x4E00;&#x65E6;&#x5185;&#x5BB9;&#x53EF;&#x53D8;&#x7684;&#xFF0C;&#x80CC;&#x666F;&#x56FE;&#x662F;&#x4F1A;&#x8DDF;&#x7740;&#x53D8;&#x3002;&#x5C3D;&#x91CF;&#x4F7F;&#x56FE;&#x7247;&#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x8272;&#x3002;&#xFF08;2&#xFF09; &#x9047;&#x5230;&#x5F62;&#x72B6;&#x8F83;&#x4E3A;&#x8D1F;&#x8D23;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6839;&#x636E;&#x89C2;&#x5BDF;&#xFF0C;&#x53BB;&#x8BBE;&#x7F6E;&#x4E0D;&#x540C;&#x7684;&#x60C5;&#x51B5;&#x3002;</span></h4>
+<p>&#x5982;&#x4F55;&#x533A;&#x666E;&#x901A;&#x51FD;&#x6570;&#x548C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5462;&#xFF0C;&#x5F53;&#x7528;new &#x5173;&#x952E;&#x5B57;&#x53BB;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;,&#x5982;&#x679C;&#x6CA1;&#x6709;new&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x5199;&#x4E86;new,&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x4E14;&#x7ED1;&#x5B9A;&#x7684;this&#x6307;&#x5411;&#x65B0;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> xiaoming = <span class="hljs-keyword">new</span> Student(<span class="hljs-string">&apos;&#x5C0F;&#x660E;&apos;</span>);
+xiaoming.name; <span class="hljs-comment">// &apos;&#x5C0F;&#x660E;&apos;</span>
+xiaoming.hello(); <span class="hljs-comment">// Hello, &#x5C0F;&#x660E;!</span>
+</code></pre>
+<p>&#x5BF9;&#x4E8E;&#x4EE5;&#x4E0A;&#x7684;&#x4F8B;&#x5B50;&#x5176;&#x539F;&#x578B;&#x94FE;&#x5C31;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-js">xiaoming ----&gt; Student.prototype ----&gt; <span class="hljs-built_in">Object</span>.prototype ----&gt; <span class="hljs-literal">null</span>
+</code></pre>
+<font color="red">  
+(1)&#x5BF9;&#x8C61;&#x6709;__proto__,&#x6307;&#x5411;&#x7684;&#x662F;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x3002;
+(2)&#x800C;&#x65B9;&#x6CD5;&#x9664;&#x4E86;&#x6709;__proto__&#xFF0C;&#x8FD8;&#x6709;prototype&#xFF0C;prototype&#x6307;&#x5411;&#x7684;&#x662F;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x3002;&#x539F;&#x578B;&#x5C5E;&#x6027;&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#xFF0C;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x7528;&#x9014;&#x662F;&#x5305;&#x542B;&#x5B9E;&#x4F8B;&#x4E2D;&#x5171;&#x4EAB;&#x7684;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x3002;&#x5176;&#x4E2D;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x53EB;constructor&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x5305;&#x542B;&#x4E86;&#x6307;&#x9488;&#xFF0C;&#x6307;&#x56DE;&#x539F;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;
+</font>
+
+
+<h3 id="&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;">&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;</h3>
+<h4 id="&#x65B9;&#x6CD5;1">&#x65B9;&#x6CD5;1</h4>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Student</span>(<span class="hljs-params">name</span>)</span>{
+   <span class="hljs-keyword">this</span>.name = name;
+    <span class="hljs-keyword">this</span>.hello = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        alert(<span class="hljs-string">&apos;Hello, &apos;</span> + <span class="hljs-keyword">this</span>.name + <span class="hljs-string">&apos;!&apos;</span>);
+    }
+}
+
+<span class="hljs-keyword">var</span> xiaoming = <span class="hljs-keyword">new</span> Student(<span class="hljs-string">&apos;&#x5C0F;&#x660E;&apos;</span>);
+xiaoming.name; <span class="hljs-comment">// &apos;&#x5C0F;&#x660E;&apos;</span>
+xiaoming.hello(); <span class="hljs-comment">// Hello, &#x5C0F;&#x660E;!</span>
+</code></pre>
+<h4 id="&#x65B9;&#x6CD5;2-&#x65B9;&#x6CD5;1&#x7684;&#x7F3A;&#x70B9;&#x662F;&#x56E0;&#x4E3A;&#x90FD;&#x4F1A;&#x6709;hello&#xFF0C;&#x901A;&#x8FC7;new&#x521B;&#x5EFA;&#x4E86;&#x5F88;&#x591A;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x7684;hello&#x51FD;&#x6570;&#x5B9E;&#x9645;&#x4E0A;&#x53EA;&#x9700;&#x8981;&#x5171;&#x4EAB;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x8282;&#x7701;&#x5F88;&#x591A;&#x7A7A;&#x95F4;&#x5185;&#x5B58;">&#x65B9;&#x6CD5;2 &#x65B9;&#x6CD5;1&#x7684;&#x7F3A;&#x70B9;&#x662F;&#x56E0;&#x4E3A;&#x90FD;&#x4F1A;&#x6709;hello&#xFF0C;&#x901A;&#x8FC7;new&#x521B;&#x5EFA;&#x4E86;&#x5F88;&#x591A;&#x7684;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x7684;hello&#x51FD;&#x6570;&#x5B9E;&#x9645;&#x4E0A;&#x53EA;&#x9700;&#x8981;&#x5171;&#x4EAB;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x8282;&#x7701;&#x5F88;&#x591A;&#x7A7A;&#x95F4;&#x5185;&#x5B58;</h4>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Student</span>(<span class="hljs-params">name</span>)</span>{
+   <span class="hljs-keyword">this</span>.name = name;
+}
+Student.prototype.hello = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+   alert(<span class="hljs-string">&apos;Hello, &apos;</span> + <span class="hljs-keyword">this</span>.name + <span class="hljs-string">&apos;!&apos;</span>);
+}
+<span class="hljs-keyword">var</span> xiaoming = <span class="hljs-keyword">new</span> Student(<span class="hljs-string">&apos;&#x5C0F;&#x660E;&apos;</span>);
+xiaoming.name; <span class="hljs-comment">// &apos;&#x5C0F;&#x660E;&apos;</span>
+xiaoming.hello(); <span class="hljs-comment">// Hello, &#x5C0F;&#x660E;!</span>
+</code></pre>
+<h3 id="&#x65B9;&#x6CD5;3-&#x65B9;&#x6CD5;2&#x4E5F;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x7F3A;&#x70B9;&#xFF0C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x88AB;&#x5B9A;&#x4E49;&#x6210;&#x4E3A;&#x4E86;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;&#x5FD8;&#x8BB0;&#x5199;new&#x600E;&#x4E48;&#x529E;&#x3002;&#x6240;&#x4EE5;&#x8FDB;&#x884C;&#x4E86;&#x6539;&#x8FDB;">&#x65B9;&#x6CD5;3 &#x65B9;&#x6CD5;2&#x4E5F;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x7F3A;&#x70B9;&#xFF0C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x88AB;&#x5B9A;&#x4E49;&#x6210;&#x4E3A;&#x4E86;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;&#x5FD8;&#x8BB0;&#x5199;new&#x600E;&#x4E48;&#x529E;&#x3002;&#x6240;&#x4EE5;&#x8FDB;&#x884C;&#x4E86;&#x6539;&#x8FDB;</h3>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Student</span>(<span class="hljs-params">props</span>) </span>{
+    <span class="hljs-keyword">this</span>.name = props.name || <span class="hljs-string">&apos;&#x533F;&#x540D;&apos;</span>; <span class="hljs-comment">// &#x9ED8;&#x8BA4;&#x503C;&#x4E3A;&apos;&#x533F;&#x540D;&apos;</span>
+    <span class="hljs-keyword">this</span>.grade = props.grade || <span class="hljs-number">1</span>; <span class="hljs-comment">// &#x9ED8;&#x8BA4;&#x503C;&#x4E3A;1</span>
+}
+
+Student.prototype.hello = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    alert(<span class="hljs-string">&apos;Hello, &apos;</span> + <span class="hljs-keyword">this</span>.name + <span class="hljs-string">&apos;!&apos;</span>);
+};
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createStudent</span>(<span class="hljs-params">props</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Student(props || {})
+}
+
+<span class="hljs-keyword">var</span> xiaoming = createStudent({
+    name: <span class="hljs-string">&apos;&#x5C0F;&#x660E;&apos;</span>
+});
+
+xiaoming.grade; <span class="hljs-comment">// 1</span>
+</code></pre>
+<p>&#x53C2;&#x8003;&#x6587;&#x6863;
+[&#x5ED6;&#x96EA;&#x7B49;]<a href="https://www.liaoxuefeng.com/wiki/1022910821149312/1023021997355072" target="_blank">https://www.liaoxuefeng.com/wiki/1022910821149312/1023021997355072</a>
+<a href="https://www.zhihu.com/question/34183746" target="_blank">https://www.zhihu.com/question/34183746</a>
+<a href="https://www.cnblogs.com/objectorl/archive/2009/09/02/1632715.html" target="_blank">https://www.cnblogs.com/objectorl/archive/2009/09/02/1632715.html</a></p>
 
                                 
                                 </section>
@@ -667,10 +701,10 @@
 
             
                 
-                
-                <a href="forget.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 常用的一些问题">
-                    <i class="fa fa-angle-right"></i>
+                <a href="数组.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 数组">
+                    <i class="fa fa-angle-left"></i>
                 </a>
+                
                 
             
         
@@ -679,7 +713,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"自适应背景图片的问题","level":"1.2.1.1","depth":3,"next":{"title":"常用的一些问题","level":"1.2.1.2","depth":3,"path":"基础知识/css/forget.md","ref":"基础知识/css/forget.md","articles":[]},"previous":{"title":"css","level":"1.2.1","depth":2,"ref":"","articles":[{"title":"自适应背景图片的问题","level":"1.2.1.1","depth":3,"path":"基础知识/css/bg.md","ref":"基础知识/css/bg.md","articles":[]},{"title":"常用的一些问题","level":"1.2.1.2","depth":3,"path":"基础知识/css/forget.md","ref":"基础知识/css/forget.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","livereload"],"pluginsConfig":{"expandable-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"基础知识/css/bg.md","mtime":"2019-08-19T07:55:44.340Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-12T06:38:23.652Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"原型和原型链","level":"1.2.2.3","depth":3,"next":{"title":"html","level":"1.2.3","depth":2,"ref":"","articles":[]},"previous":{"title":"数组","level":"1.2.2.2","depth":3,"path":"基础知识/js/数组.md","ref":"基础知识/js/数组.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","livereload"],"pluginsConfig":{"expandable-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"基础知识/js/原型和原型链.md","mtime":"2019-09-23T03:21:12.823Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-12T06:38:23.652Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

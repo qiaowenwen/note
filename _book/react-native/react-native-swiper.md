@@ -2,6 +2,7 @@
 解决方案：
 
 ```js
+//注意版本的升级，不一定是npm中的，也有可能在github中有更高的版本
 <Swiper
   ref="scrollView"
   loop={true}
@@ -18,3 +19,6 @@
            }
 
 ```
+
+参考文档（1）https://blog.csdn.net/book_1992/article/details/79744877
+（ 2）https://github.com/leecade/react-native-swiper
